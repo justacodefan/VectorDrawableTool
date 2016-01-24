@@ -1,0 +1,20 @@
+plugins {
+    id 'application'
+}
+
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+
+
+group 'com.justacodefan'
+version '1.0.0'
+
+applicationName = 'vd-tool'
+mainClassName = 'com.android.ide.common.vectordrawable.VdCommandLineTool'
+
+dependencies {
+    compile project(':app')
+}
